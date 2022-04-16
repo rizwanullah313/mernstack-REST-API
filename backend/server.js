@@ -9,6 +9,9 @@ const port = process.env.PORT || 5000
 
 const app = express()
 
+app.use(express.json())
+app.use(express.urlencoded({ extended: false}))
+
 // app.get('/api/goals', (req, res) => {
 //     //res.send('Get Goals')
 //     res.status(200).json({message: 'Get Goals'})
