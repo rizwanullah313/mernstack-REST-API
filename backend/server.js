@@ -24,5 +24,7 @@ app.use(express.urlencoded({ extended: false}))
 // }) this is move to routes/goalRoutes.js file
 
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
+
 app.use(errorHandler)
 app.listen(port, ()=> console.log(`Server Started on Port ${port}`))
