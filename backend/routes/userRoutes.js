@@ -1,3 +1,6 @@
+// npm i bcryptjs 
+// npm i jsonwebtoken
+
 const express = require('express')
 const router = express.Router()
 const { registerUser, loginUser, getme } = require('../controllers/userController')
